@@ -5,20 +5,35 @@ int main(){
     srand(time(NULL));  //current time for random generator
     int r;
     int x;
+    int attempts=0;
     printf("welcome to number guessing game\n");
-    r= rand() % 10;
-    printf("computer has decided his no");
+    printf(" press 0 to exit at any point\n");
+
+    r= rand() % 10+1;
+    printf("enter your guess:\n");
     while(1){
-        printf("enter your guess dude:  ");
+        
         scanf("%d", &x);
+        if(x==0)
+        {
+            printf("game exited!\n");
+            break;
+            
+        }
         if(r==x){
         printf("you guessed it damn\n");
         break;
         }
         else{
-        printf("noob guess again\n");
+            if(r>x){
+                printf("too low! guess hiigher\n");
+            }
+            else{
+                printf("too high! guess lower\n");
+            }
+            attempts++;
         }
-
     }
+    printf("you took %d attempts", attempts);
     
 }

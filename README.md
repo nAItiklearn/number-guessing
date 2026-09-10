@@ -19,9 +19,9 @@ string.h
 
 ## run (this requires curl + gcc on the reviewer's machine.)-
 
-for mac and linux -
- curl -O https://raw.githubusercontent.com/nAItiklearn/number-guessing/main/number-guess.c && gcc number-guess.c -o game && ./game
+### for mac and linux -
+curl -O https://raw.githubusercontent.com/nAItiklearn/number-guessing/main/number-guess.c && gcc number-guess.c -o game && ./game
  
-for windows-
- curl -o number-guess.c https://raw.githubusercontent.com/nAItiklearn/number-guessing/main/number-guess.c; gcc number-guess.c -o game.exe; .\game.exe
-
+### Windows PowerShell
+```powershell
+curl.exe -o number-guess.c https://raw.githubusercontent.com/nAItiklearn/number-guessing/main/number-guess.c; gcc number-guess.c -o game.exe; .\game.exe

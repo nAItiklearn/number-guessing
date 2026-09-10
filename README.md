@@ -17,6 +17,11 @@ the computer randomly chooses a number, and you try to guess it.Choose a difficu
 -time.h
 string.h
 
-## run 
+## run (this requires curl + gcc on the reviewer's machine.)-
 
+for mac and linux -
+ curl -O https://raw.githubusercontent.com/nAItiklearn/number-guessing/main/number-guess.c && gcc number-guess.c -o game && ./game
+ 
+for windows-
+ curl -o number-guess.c https://raw.githubusercontent.com/nAItiklearn/number-guessing/main/number-guess.c; gcc number-guess.c -o game.exe; .\game.exe
 

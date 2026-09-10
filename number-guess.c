@@ -50,7 +50,7 @@ int main(){
        r= rand()% max+1;
         if(choice==1){
             printf("-------------------------\n");
-            printf("Difficulty: EASY\nRange: 1-10\nAttempts: 3\n -------------------------\n");
+            printf("Difficulty: EASY\nRange: 1-10\nAttempts: 5\n -------------------------\n");
         }
         else if(choice==2){
             printf("Difficulty: MID\nRange: 1-50\nAttempts: 10\n -------------------------\n");
@@ -73,7 +73,7 @@ int main(){
         attempts++;
 
         //if guessed correct , come out from inner loop
-        if(x==r){
+        if(x==r ){
             printf("you guessed it  bro\n");
             printf("you took %d attempts \n \n", attempts);
             break;
